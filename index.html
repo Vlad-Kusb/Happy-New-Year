@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Happy New Year!</title>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>
+            <span id="blink6">
+                Поздравляю всех с <span id="blink5">
+                    новым годом!
+                </span>
+            </span>
+        </h1>
+        <p>
+            Хочется всем пожелать всего самого наилучшего и...
+            <br>
+            Да короче, я не мастер писать поздравления, надеюсь у вас всё будет хорошо
+        </p>
+
+        <img class="img" src="images/shar.gif" width="40%" height="auto" alt="">
+        <!-- <img class="collectonme img " src="images/elka.gif" width="20%" height="auto" alt=""> -->
+        <img class="img border-radius" src="images/dog.gif" width="50%" height="auto" alt="">
+
+        <p class="collectonme green">Все, можешь уходить с сайта</p>
+
+        <!-- <p>
+            Короче, чел, если снег криво отображается снизу, то просто прокрути страничку наверх и перезагрузи
+            Приятно, что это читат кто-то
+            С новым годом! :3
+        </p> -->
+
+
+        <script src="snow/snowfall.jquery.min.js"></script>
+
+        <script>
+
+            $(document).ready(function() {
+
+                $(document).snowfall({
+                    collection: ".collectonme",
+                    flakeCount: 100 // Количество снежинок
+                });
+
+            });
+
+        </script>
+    </body>
+</html>
